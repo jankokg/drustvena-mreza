@@ -180,6 +180,8 @@ const removeMyPost = (btn) => {
 
   let post = new Post();
   post.delete(post_id);
+  let comment = new Comment();
+  comment.delete(post_id);
 };
 
 const likePost = (btn) => {
